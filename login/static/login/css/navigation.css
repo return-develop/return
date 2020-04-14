@@ -1,0 +1,56 @@
+.topmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(48, 36, 36);
+}
+.topmenu li {
+    float: left;
+}
+.topmenu li a {
+    display: inline-block;
+    color: #faf0e6;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+.topmenu li a:hover {
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+}
+li:first-child {
+    color: white;
+    padding-left: 100px;
+    /* background-color: rgb(91, 76, 175); */
+}
+
+ul span{
+    float: right;
+    font-size: 0.9em;
+}
+
+li:last-child{
+    padding-right: 100px;
+}
+
+ul span a.login-nav{
+    padding-left: 2px!important;
+    padding-right: 2px;
+}
+
+ul span a.register-nav{
+    padding-left: 0px!important;
+}
+
+ul span a.book-nav{
+    padding-left: 0px!important;
+}
+ul span li img{
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}

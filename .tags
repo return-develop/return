@@ -1,0 +1,91 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOWED_HOSTS	.\login_register\settings.py	/^ALLOWED_HOSTS = []$/;"	v
+AUTH_PASSWORD_VALIDATORS	.\login_register\settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+AppConfig	.\login\apps.py	/^from django.apps import AppConfig$/;"	i
+BASE_DIR	.\login_register\settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	v
+CaptchaField	.\login\forms.py	/^from captcha.fields import CaptchaField$/;"	i
+DATABASES	.\login_register\settings.py	/^DATABASES = {$/;"	v
+DEBUG	.\login_register\settings.py	/^DEBUG = True$/;"	v
+INSTALLED_APPS	.\login_register\settings.py	/^INSTALLED_APPS = [$/;"	v
+LANGUAGE_CODE	.\login_register\settings.py	/^LANGUAGE_CODE = 'zh-hans'$/;"	v
+LoginConfig	.\login\apps.py	/^class LoginConfig(AppConfig):$/;"	c
+MIDDLEWARE	.\login_register\settings.py	/^MIDDLEWARE = [$/;"	v
+Meta	.\login\models.py	/^    class Meta:$/;"	c	class:User
+Migration	.\login\migrations\0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+ROOT_URLCONF	.\login_register\settings.py	/^ROOT_URLCONF = 'login_register.urls'$/;"	v
+RegisterForm	.\login\forms.py	/^class RegisterForm(forms.Form):$/;"	c
+SECRET_KEY	.\login_register\settings.py	/^SECRET_KEY = '&@miy)mywxm)@bntj+8zs#t2p5*k*k35b%r@wrr6pd(#cwhe#*'$/;"	v
+STATIC_URL	.\login_register\settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+TEMPLATES	.\login_register\settings.py	/^TEMPLATES = [$/;"	v
+TIME_ZONE	.\login_register\settings.py	/^TIME_ZONE = 'Asia\/Shanghai'$/;"	v
+TestCase	.\login\tests.py	/^from django.test import TestCase$/;"	i
+USE_I18N	.\login_register\settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	.\login_register\settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	.\login_register\settings.py	/^USE_TZ = False$/;"	v
+User	.\login\models.py	/^class User(models.Model):$/;"	c
+UserForm	.\login\forms.py	/^class UserForm(forms.Form):$/;"	c
+WSGI_APPLICATION	.\login_register\settings.py	/^WSGI_APPLICATION = 'login_register.wsgi.application'$/;"	v
+__str__	.\login\models.py	/^    def __str__(self):$/;"	m	class:User	file:
+admin	.\login\admin.py	/^from django.contrib import admin$/;"	i
+admin	.\login_register\urls.py	/^from django.contrib import admin$/;"	i
+application	.\login_register\wsgi.py	/^application = get_wsgi_application()$/;"	v
+attrs	.\login\forms.py	/^        attrs={'class': 'form-control', 'placeholder': "Username", 'autofocus': ''}))$/;"	v	class:UserForm
+c_time	.\login\models.py	/^    c_time = models.DateTimeField(auto_now_add=True)$/;"	v	class:User
+captcha	.\login\forms.py	/^    captcha = CaptchaField(label='验证码')$/;"	v	class:RegisterForm
+captcha	.\login\forms.py	/^    captcha = CaptchaField(label='验证码')$/;"	v	class:UserForm
+dependencies	.\login\migrations\0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+email	.\login\forms.py	/^    email = forms.EmailField(label="邮箱地址", widget=forms.EmailInput(attrs={'class': 'form-control'}))$/;"	v	class:RegisterForm
+email	.\login\models.py	/^    email = models.EmailField(unique=True)$/;"	v	class:User
+execute_from_command_line	.\manage.py	/^        from django.core.management import execute_from_command_line$/;"	i
+fields	.\login\migrations\0001_initial.py	/^            fields=[$/;"	v	class:Migration
+forms	.\login\forms.py	/^from django import forms$/;"	i
+forms	.\login\views.py	/^from . import forms$/;"	i
+gender	.\login\forms.py	/^    gender = ($/;"	v	class:RegisterForm
+gender	.\login\models.py	/^    gender = ($/;"	v	class:User
+get_wsgi_application	.\login_register\wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	i
+hash_code	.\login\views.py	/^def hash_code(s, salt='login_register'):  # 加点盐$/;"	f
+hashlib	.\login\views.py	/^import hashlib$/;"	i
+include	.\login_register\urls.py	/^from django.urls import path, include$/;"	i
+index	.\login\views.py	/^def index(request):$/;"	f
+initial	.\login\migrations\0001_initial.py	/^    initial = True$/;"	v	class:Migration
+login	.\login\views.py	/^def login(request):$/;"	f
+logout	.\login\views.py	/^def logout(request):$/;"	f
+main	.\manage.py	/^def main():$/;"	f
+migrations	.\login\migrations\0001_initial.py	/^from django.db import migrations, models$/;"	i
+models	.\login\admin.py	/^from . import models$/;"	i
+models	.\login\migrations\0001_initial.py	/^from django.db import migrations, models$/;"	i
+models	.\login\models.py	/^from django.db import models$/;"	i
+models	.\login\views.py	/^from . import models$/;"	i
+name	.\login\apps.py	/^    name = 'login'$/;"	v	class:LoginConfig
+name	.\login\migrations\0001_initial.py	/^            name='User',$/;"	v	class:Migration
+name	.\login\models.py	/^    name = models.CharField(max_length=128, unique=True)$/;"	v	class:User
+operations	.\login\migrations\0001_initial.py	/^    operations = [$/;"	v	class:Migration
+options	.\login\migrations\0001_initial.py	/^            options={$/;"	v	class:Migration
+ordering	.\login\models.py	/^        ordering = ['-c_time']$/;"	v	class:User.Meta
+os	.\login_register\settings.py	/^import os$/;"	i
+os	.\login_register\wsgi.py	/^import os$/;"	i
+os	.\manage.py	/^import os$/;"	i
+password	.\login\forms.py	/^    password = forms.CharField(label="密码", max_length=256,$/;"	v	class:UserForm
+password	.\login\models.py	/^    password = models.CharField(max_length=256)$/;"	v	class:User
+password1	.\login\forms.py	/^    password1 = forms.CharField(label="密码", max_length=256, widget=forms.PasswordInput(attrs={'class': 'form-control'}))$/;"	v	class:RegisterForm
+password2	.\login\forms.py	/^    password2 = forms.CharField(label="确认密码", max_length=256,$/;"	v	class:RegisterForm
+path	.\login_register\urls.py	/^from django.urls import path, include$/;"	i
+redirect	.\login\views.py	/^from django.shortcuts import redirect$/;"	i
+register	.\login\views.py	/^def register(request):$/;"	f
+render	.\login\views.py	/^from django.shortcuts import render$/;"	i
+sex	.\login\forms.py	/^    sex = forms.ChoiceField(label='性别', choices=gender)$/;"	v	class:RegisterForm
+sex	.\login\models.py	/^    sex = models.CharField(max_length=32, choices=gender, default='男')$/;"	v	class:User
+sys	.\manage.py	/^import sys$/;"	i
+urlpatterns	.\login_register\urls.py	/^urlpatterns = [$/;"	v
+username	.\login\forms.py	/^    username = forms.CharField(label="用户名", max_length=128, widget=forms.TextInput($/;"	v	class:UserForm
+username	.\login\forms.py	/^    username = forms.CharField(label="用户名", max_length=128, widget=forms.TextInput(attrs={'class': 'form-control'}))$/;"	v	class:RegisterForm
+verbose_name	.\login\models.py	/^        verbose_name = '用户'$/;"	v	class:User.Meta
+verbose_name_plural	.\login\models.py	/^        verbose_name_plural = '用户'$/;"	v	class:User.Meta
+views	.\login_register\urls.py	/^from login import views$/;"	i
+widget	.\login\forms.py	/^                                widget=forms.PasswordInput(attrs={'class': 'form-control'}))$/;"	v	class:RegisterForm
+widget	.\login\forms.py	/^                               widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': "Password"}))$/;"	v	class:UserForm

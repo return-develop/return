@@ -1,0 +1,95 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 上述meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'login/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'login/css/register.css' %}" rel="stylesheet"/>
+    <link href="{% static 'login/css/navigation.css' %}" rel="stylesheet"/>
+    <title>注册</title>
+</head>
+<body>
+    <ul class="topmenu">
+        <li><a href="#home" class="active">首页</a></li>
+        <li><a href="#news">就业咨询</a></li>
+        <li><a href="#contact">求职管家</a></li>
+        <span>
+            <li class="login-register">
+                <img src="../../static/login/images/curry.jpg">
+                <a href="/login/" class="login-nav">登录</a>/
+                <a href="/register/" class="register-nav">注册</a></li>
+            <li class="book">
+                <img src="../../static/login/images/wechat-1.jpg">
+                <a href="/book/" class="book-nav">订阅公众号</a>
+            </li>
+        </span>cd
+    </ul> 
+    <div class="content">
+        <div class="col_1"></div>
+        <div class="col_2">
+            <form class="form-register" action="/register/" method="post">
+
+                {% if register_form.captcha.errors %}
+                    <div class="alert alert-warning">{{ register_form.captcha.errors }}</div>
+                {% elif message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+                {% csrf_token %}
+                <div class="ask-login">
+                    <p>已有账号？<a href="/login/" class="login-style">
+                    请登陆
+                    </a></p>
+                </div>
+                <div class="content-register">
+                    <div class="content-title">
+                        <p>注册  归来</p>
+                    </div>
+                    <div class="form-group">
+                        {{ register_form.username.label_tag }}
+                        {{ register_form.username }}
+                    </div>
+                    <div class="form-group">
+                        {{ register_form.password1.label_tag }}
+                        {{ register_form.password1 }}
+                    </div>
+                    <div class="form-group">
+                        {{ register_form.password2.label_tag }}
+                        {{ register_form.password2 }}
+                    </div>
+                    <div class="form-group">
+                        {{ register_form.email.label_tag }}
+                        {{ register_form.email }}
+                    </div>
+                    <!-- <div class="form-group">
+                        {{ register_form.sex.label_tag }}
+                        {{ register_form.sex }}
+                    </div> -->
+                    <!-- <div class="form-group">
+                        {{ register_form.captcha.label_tag }}
+                        {{ register_form.captcha }}
+                    </div> -->
+                    <div class="btn-style">
+                        <button type="submit" class="btn btn-primary btn-else">注册</button>
+                    </div>
+                    <div class="agreement">
+                        <p>点击注册表示我已阅读并同意归来的<a href="/agreement/">服务条款</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col_3"></div>
+    </div> <!-- /container -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+{#    以下三者的引用顺序是固定的#}
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.15.0/umd/popper.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
