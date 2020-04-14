@@ -8,19 +8,6 @@
 * six==1.13.0
 * sqlparse==0.3.0
 
-#### 软件
-* JetBrains PyCharm 2019.2.3 x64
-
-#### 数据库设计
-* 用户名
-* 密码
-* 邮箱
-* 性别
-* 创建时间
-
-#### 创建管理员
-* python manage.py createsuperuser
-
 #### 路由设计
 URL|视图|模板|说明
 -|-|-|-
